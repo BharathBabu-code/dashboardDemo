@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Bharath</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main layout grid container -->
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="photos/logo.png" alt="Logo" class="icon logo-icon">
+                <h2>Dashboard</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><img src="photos/home.png" alt="" class="icon"> Home</li>
+                    <li><img src="photos/profile.png" alt="" class="icon"> Profile</li>
+                    <li><img src="photos/messages.png" alt="" class="icon"> Messages</li>
+                    <li><img src="photos/history.png" alt="" class="icon"> History</li>
+                    <li><img src="photos/tasks.png" alt="" class="icon"> Tasks</li>
+                    <li><img src="photos/communities.png" alt="" class="icon"> Communities</li>
+                </ul>
+            </nav>
+
+            <nav class="sidebar-nav secondary-nav">
+                <ul>
+                    <li><img src="photos/settings.png" alt="" class="icon"> Settings</li>
+                    <li><img src="photos/support.png" alt="" class="icon"> Support</li>
+                    <li><img src="photos/privacy.png" alt="" class="icon"> Privacy</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area: Grid for Header and Dashboard Body -->
+        <main class="main-content">
+            
+            <!-- Header: Two flex rows -->
+            <header class="top-header">
+                <div class="header-search">
+                    <img src="photos/search.png" alt="Search" class="icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-user-mini">
+                    <img src="photos/bell.png" alt="Notifications" class="icon">
+                    <img src="photos/avatar.jpg" alt="Avatar" class="avatar mini-avatar">
+                    <span class="user-name">Bharath</span>
+                </div>
+
+                <div class="header-greeting">
+                    <img src="photos/avatar.png" alt="Avatar" class="avatar large-avatar">
+                    <div class="greeting-text">
+                        <p>Hi there,</p>
+                        <h1>Bharath (@bharath)</h1>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </header>
+
+            <!-- Dashboard Body: Grid layout Projects & Side Info -->
+            <div class="dashboard-body">
+                
+                <!-- Projects Section -->
+                <section class="projects-section">
+                    <h2>Your Projects</h2>
+                    <!-- Fluid grid: auto-fit handles shrinking/expanding automatically -->
+                    <div class="projects-grid">
+                        
+                        <article class="project-card">
+                            <h3>Autonomous Multi-Agent Orchestrator</h3>
+                            <p>A state-driven multi-agent execution framework utilizing a Finite State Machine (FSM). It dynamically provisions ephemeral, zero-trust Alpine Linux Docker containers to safely execute LLM-generated code, featuring a Human-in-the-Loop (HITL) circuit breaker for secure memory injection.</p>
+                            <div class="card-actions">
+                                <img src="photos/star.png" alt="Star" class="icon">
+                                <img src="photos/watch.png" alt="Watch" class="icon">
+                                <img src="photos/share.png" alt="Share" class="icon">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Local RAG Prompt Injection Firewall</h3>
+                            <p>A dual-phase LLM security firewall combining deterministic RegEx signature-matching with semantic AI guardrails (Mistral 7B). Architected to intercept complex prompt injections, jailbreaks, and data poisoning attempts offline.</p>
+                            <div class="card-actions">
+                                <img src="photos/star.png" alt="Star" class="icon">
+                                <img src="photos/watch.png" alt="Watch" class="icon">
+                                <img src="photos/share.png" alt="Share" class="icon">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Web Terminal Emulator</h3>
+                            <p>A browser-based Linux-style terminal emulator built with HTML, CSS, and Vanilla JavaScript. This webpage simulates an interactive command-line environment with a virtual file system, command history, directory navigation, and stateful terminal behavior — entirely on the client side. The project focuses on applying core JavaScript, DOM manipulation, state management, and event handling to create a familiar terminal experience in the browser.</p>
+                            <div class="card-actions">
+                                <img src="photos/star.png" alt="Star" class="icon">
+                                <img src="photos/watch.png" alt="Watch" class="icon">
+                                <img src="photos/share.png" alt="Share" class="icon">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Etch-a-Sketch</h3>
+                            <p>A browser-based sketchpad utilizing JavaScript DOM manipulation and CSS Flexbox to create a dynamic, interactive drawing canvas with adjustable grid resolution and progressive hover effects.</p>
+                            <div class="card-actions">
+                                <img src="photos/star.png" alt="Star" class="icon">
+                                <img src="photos/watch.png" alt="Watch" class="icon">
+                                <img src="photos/share.png" alt="Share" class="icon">
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Demo Login Page UI</h3>
+                            <p>A responsive, signup page featuring client-side form validation, CSS pseudo-classes (:user-invalid), semantic HTML structure, and custom error messaging without backend dependencies.</p>
+                            <div class="card-actions">
+                                <img src="photos/star.png" alt="Star" class="icon">
+                                <img src="photos/watch.png" alt="Watch" class="icon">
+                                <img src="photos/share.png" alt="Share" class="icon">
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Side Information Section -->
+                <aside class="info-section">
+                    
+                    <div class="info-block">
+                        <h2>Announcements</h2>
+                        <div class="card list-card">
+                            <div class="list-item">
+                                <h4>Make sure you save your work regularly</h4>
+                                <p> Its important to save your work regularly to avoid losing any progress.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>New Feature Release</h4>
+                                <p>Dont have anything to announce yet.</p>
+                            </div>
+                            <div class="list-item">
+                                <h4>Updated Privacy Policy</h4>
+                                <p>your privacy is important to us.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h2>Trending</h2>
+                        <div class="card list-card trending-card">
+                            <div class="trending-item">
+                                <img src="photos/avatar2.png" alt="Avatar" class="avatar mini-avatar">
+                                <div>
+                                    <h4>@maxVerstappen</h4>
+                                    <p>DuDuDuDu max verstapennn</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img src="photos/avatar3.png" alt="Avatar" class="avatar mini-avatar">
+                                <div>
+                                    <h4>@ronaldo</h4>
+                                    <p>Siuuuuuuu</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img src="photos/avatar4.png" alt="Avatar" class="avatar mini-avatar">
+                                <div>
+                                    <h4>@elmo</h4>
+                                    <p>lalalala lalalala elmoooo's worldddd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
